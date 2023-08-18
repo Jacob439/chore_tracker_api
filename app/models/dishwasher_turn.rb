@@ -1,2 +1,0 @@
-class DishwasherTurn < ApplicationRecord
-end
