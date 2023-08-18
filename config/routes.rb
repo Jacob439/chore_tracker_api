@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   namespace :api do
+    namespace :v2 do
+      resources :dishwasher_turns, only: [:index, :show, :create]
+    end
     namespace :v1 do
       resources :testruns, only: [:index, :show, :create]
     end
